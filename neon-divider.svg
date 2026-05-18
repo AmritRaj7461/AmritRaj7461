@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 15" width="100%" height="15">
+  <defs>
+    <!-- Glowing Filters -->
+    <filter id="laserGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Laser Pulse Animation */
+    @keyframes laserRun {
+      0% { transform: translateX(-100px); }
+      100% { transform: translateX(980px); }
+    }
+    .laser-beam {
+      animation: laserRun 3s linear infinite;
+    }
+  </style>
+
+  <!-- Ground Line -->
+  <line x1="0" y1="7.5" x2="880" y2="7.5" stroke="#0f192b" stroke-width="1.5" />
+  <line x1="0" y1="7.5" x2="880" y2="7.5" stroke="#00FF66" stroke-width="1" stroke-opacity="0.25" filter="url(#laserGlow)" />
+
+  <!-- Flowing Laser Pulse -->
+  <g class="laser-beam">
+    <!-- Outer light trail -->
+    <rect x="0" y="5.5" width="80" height="4" rx="2" fill="url(#cyanGrad)" fill-opacity="0.8" filter="url(#laserGlow)">
+      <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#00FF66" stop-opacity="0" />
+        <stop offset="80%" stop-color="#00FF66" stop-opacity="0.8" />
+        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="1" />
+      </linearGradient>
+    </rect>
+    <!-- Head spark -->
+    <circle cx="80" cy="7.5" r="2.5" fill="#ffffff" filter="url(#laserGlow)" />
+  </g>
+</svg>

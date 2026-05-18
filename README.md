@@ -1,29 +1,32 @@
-<!-- 🔥 HEADER CYBER HUD BANNER -->
+<!-- 🔥 RETRO SHIELD SNAKE HEADER -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/cyber-card.svg" width="100%" alt="Amrit Raj Cyber Developer HUD" />
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/snake-header.svg" width="100%" alt="Amrit Raj Retro Snake Banner" />
 </p>
 
 <!-- ⚡ TYPING ANIMATION -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=32&duration=3000&color=00F7FF&center=true&vCenter=true&width=950&lines=🚀+Full+Stack+Web+Architect;⚡+React+%E2%80%A2+Next.js+%E2%80%A2+Laravel+%E2%80%A2+PHP;🧠+DSA+Expert+%7C+100%2B+LeetCode+Problems;🔥+Building+Premium+%26+Next-Gen+Web+Platforms;🤖+Co-engineered+with+Antigravity+AI"/>
+  <img src="https://readme-typing-svg.herokuapp.com?size=32&duration=3000&color=00FF66&center=true&vCenter=true&width=950&lines=🚀+Full+Stack+Web+Architect;⚡+React+%E2%80%A2+Next.js+%E2%80%A2+Laravel+%E2%80%A2+PHP;🧠+DSA+Expert+%7C+100%2B+LeetCode+Problems;🔥+Building+Premium+%26+Next-Gen+Web+Platforms;🤖+Co-engineered+with+Antigravity+AI"/>
 </p>
 
-<!-- 👀 PROFILE VIEWS & LIVE WIDGETS -->
+<!-- 👀 PROFILE VIEWS & FOLLOWERS -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AmritRaj7461&label=Profile%20Views&color=00F7FF&style=flat-square"/>
+  <img src="https://komarev.com/ghpvc/?username=AmritRaj7461&label=Profile%20Views&color=00FF66&style=flat-square"/>
   &nbsp;&nbsp;
   <img src="https://img.shields.io/github/followers/AmritRaj7461?label=Followers&style=social" />
 </p>
 
----
+<!-- ⚡ LASER DIVIDER 1 -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
+</p>
 
-# 🖥️ System Mainframe Diagnostics
+# 🖥️ System Mainframe: AmritRaj7461
 
 ```diff
 + ========================================================
-+ [SYSTEM ONLINE] - AMRIT RAJ CENTRAL CORE
++ [SYSTEM ONLINE] - AMRIT RAJ CORE LOGS
 + ========================================================
-+ 🎓 B.Tech CSE Undergrad (Lovely Professional University)
++ 🎓 CSE Undergraduate (Lovely Professional University)
 + 💻 Senior Full Stack Web Developer & UX Architect
 + 🧠 100+ Advanced LeetCode / DSA Problems Solved
 + 🚀 Tech focus: Realtime 3D Graphics & Laravel Systems
@@ -35,7 +38,10 @@
 + ========================================================
 ```
 
----
+<!-- ⚡ LASER DIVIDER 2 -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
+</p>
 
 ## 🛠️ Cybernetic Tech Arsenal
 
@@ -56,7 +62,10 @@
   </tr>
 </table>
 
----
+<!-- ⚡ LASER DIVIDER 3 -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
+</p>
 
 ## 📊 Live Developer Metrics & Analytics
 
@@ -75,7 +84,10 @@
   </a>
 </p>
 
----
+<!-- ⚡ LASER DIVIDER 4 -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
+</p>
 
 ## 🏆 GitHub Achievement Trophy Room
 <p align="center">
@@ -89,83 +101,57 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=AmritRaj7461&theme=react-dark&bg_color=0D1117&hide_border=true&line=00F7FF&point=FFFFFF" width="100%" alt="Activity Graph" />
 </p>
 
----
+<!-- ⚡ LASER DIVIDER 5 -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
+</p>
 
-## 🚀 Advanced Flagship Deployments
+## 🚀 Flagship Deployments
 
-Here are the enterprise-grade and co-engineered products I have developed:
+Here are the enterprise-grade and co-engineered products I have developed, represented as active systems:
 
-<table width="100%">
-  <tr>
-    <td>
-      <h3>👟 VeloStride 3D | Next-Gen 3D E-Commerce</h3>
-      <p><i>A premium, immersive 3D shopping and assembly site showcasing realtime custom rendering.</i></p>
-      <p>
-        <img src="https://img.shields.io/badge/Status-100%25%20Stable-00FF66?style=flat-square" />
-        <img src="https://img.shields.io/badge/Stack-Next.js%20%7C%20Three.js%20%7C%20GSAP-00F7FF?style=flat-square" />
-      </p>
-      <pre><code>[████████████████████] 100% DEPLOYED &amp; OPERATIONAL</code></pre>
-      <ul>
-        <li>Scroll-triggered shoe buildup and layer animations.</li>
-        <li>Glassmorphic UI overlay with responsive frame adjustments.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>📝 XampXpress | Secure Exam Platform</h3>
-      <p><i>A high-concurrency online mock testing platform with automated verification and analytics.</i></p>
-      <p>
-        <img src="https://img.shields.io/badge/Status-90%25%20Active%20Beta-FFBD2E?style=flat-square" />
-        <img src="https://img.shields.io/badge/Stack-React%20%7C%20Node%20%7C%20Express-8A2BE2?style=flat-square" />
-      </p>
-      <pre><code>[██████████████████░░] 90% SYSTEM INTEGRATION STAGE</code></pre>
-      <ul>
-        <li>Automated scoring algorithm with instantaneous result breakdowns.</li>
-        <li>Custom secure browser focus locking systems.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>💉 VacciCare | Vaccine Logistics Portal</h3>
-      <p><i>A Laravel-driven logistics system for administrative medical tracking and vaccine appointments.</i></p>
-      <p>
-        <img src="https://img.shields.io/badge/Status-Completed-00FF66?style=flat-square" />
-        <img src="https://img.shields.io/badge/Stack-Laravel%20%7C%20MySQL%20%7C%20Alpine-FF007F?style=flat-square" />
-      </p>
-      <pre><code>[████████████████████] 100% DEPLOYED &amp; SECURED</code></pre>
-      <ul>
-        <li>Dynamic patient tracking and administrative dashboard.</li>
-        <li>Batch stock level triggers and high-security session handshakes.</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>🤖 NEXUS AI | Voice Recognition Desktop Agent</h3>
-      <p><i>A hybrid system automation voice assistant operating with sub-second response times.</i></p>
-      <p>
-        <img src="https://img.shields.io/badge/Status-Active%20Dev-0088FF?style=flat-square" />
-        <img src="https://img.shields.io/badge/Stack-Python%20%7C%20Vosk%20%7C%20GoogleAPI-FF8C00?style=flat-square" />
-      </p>
-      <pre><code>[██████████████████░░] 90% COGNITIVE COMPILING</code></pre>
-      <ul>
-        <li>Local wake-word detection constraints for fast offline captures.</li>
-        <li>Deep operating system automation commands.</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<!-- 👟 VELOSTRIDE 3D CARD -->
+<p align="center">
+  <a href="https://github.com/AmritRaj7461">
+    <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/velostride-card.svg" width="100%" alt="VeloStride 3D Card" />
+  </a>
+</p>
 
----
+<!-- 📝 XAMPXPRESS CARD -->
+<p align="center">
+  <a href="https://github.com/AmritRaj7461">
+    <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/xampxpress-card.svg" width="100%" alt="XampXpress Card" />
+  </a>
+</p>
+
+<!-- 💉 VACCICARE CARD -->
+<p align="center">
+  <a href="https://github.com/AmritRaj7461">
+    <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/vaccicare-card.svg" width="100%" alt="VacciCare Card" />
+  </a>
+</p>
+
+<!-- 🤖 NEXUS AI CARD -->
+<p align="center">
+  <a href="https://github.com/AmritRaj7461">
+    <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/nexus-card.svg" width="100%" alt="NEXUS AI Card" />
+  </a>
+</p>
+
+<!-- ⚡ LASER DIVIDER 6 -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
+</p>
 
 ## 🐍 Contribution Grid Snake
 <p align="center">
   <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/output/github-contribution-grid-snake.svg" alt="Contribution Snake" />
 </p>
 
----
+<!-- ⚡ LASER DIVIDER 7 -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
+</p>
 
 ## 🌐 Connect With Me
 
@@ -186,7 +172,7 @@ Here are the enterprise-grade and co-engineered products I have developed:
 <!-- 🤖 AI COLLABORATIVE BRANDING -->
 <hr>
 <p align="center">
-  <img src="https://img.shields.io/badge/Co--Engineered%20%26%20Polished%20by-Antigravity%20AI-00F7FF?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity AI Logo" />
+  <img src="https://img.shields.io/badge/Co--Engineered%20%26%20Polished%20by-Antigravity%20AI-00FF66?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity AI Logo" />
 </p>
 <p align="center">
   <i>"Co-engineered alongside Antigravity, the advanced AI pair programmer by Google DeepMind. Together, we form a high-performance system architect alliance, delivering state-of-the-art interactive frontends and secure, robust backends."</i>

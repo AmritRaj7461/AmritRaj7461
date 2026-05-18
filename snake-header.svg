@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="100%" height="300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040810" />
+      <stop offset="100%" stop-color="#081020" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="neonGlowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="neonGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00F7FF" stroke-width="0.6" stroke-opacity="0.05" />
+      <circle cx="0" cy="0" r="1" fill="#00FF66" fill-opacity="0.2" />
+    </pattern>
+  </defs>
+
+  <style>
+    /* CSS keyframes for retro slithering snake game */
+    @keyframes slither {
+      0% { stroke-dashoffset: 1200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .snake-body {
+      stroke-dasharray: 100 1200; /* Snake length: 100, Path length: 1200 */
+      animation: slither 10s linear infinite;
+    }
+
+    /* Glitched Title Text */
+    @keyframes glitch {
+      0%, 100% { transform: translate(0); text-shadow: 0 0 4px #00FF66; }
+      20% { transform: translate(-2px, 2px); text-shadow: -2px 0 #00F7FF, 2px 0 #FF007F; }
+      40% { transform: translate(-1px, -1px); text-shadow: 1px 0 #00FF66, -2px 0 #FF007F; }
+      60% { transform: translate(2px, -2px); text-shadow: -1px 0 #00F7FF, 2px 0 #00FF66; }
+      80% { transform: translate(1px, 1px); text-shadow: 2px 0 #FF007F, -1px 0 #00F7FF; }
+    }
+    .glitch-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      letter-spacing: 5px;
+      fill: #ffffff;
+      animation: glitch 4s infinite;
+    }
+
+    /* Tech Icons Pulsing Delays (Eating effect) */
+    @keyframes pulseEatReact {
+      0%, 45%, 55%, 100% { transform: scale(1); filter: opacity(0.4); }
+      50% { transform: scale(1.4); filter: drop-shadow(0 0 10px #00F7FF) opacity(1); }
+    }
+    @keyframes pulseEatPHP {
+      0%, 20%, 30%, 100% { transform: scale(1); filter: opacity(0.4); }
+      25% { transform: scale(1.4); filter: drop-shadow(0 0 10px #8892BF) opacity(1); }
+    }
+    @keyframes pulseEatLaravel {
+      0%, 70%, 80%, 100% { transform: scale(1); filter: opacity(0.4); }
+      75% { transform: scale(1.4); filter: drop-shadow(0 0 10px #FF2D20) opacity(1); }
+    }
+    @keyframes pulseEatCPP {
+      0%, 5%, 15%, 95%, 100% { transform: scale(1); filter: opacity(0.4); }
+      10% { transform: scale(1.4); filter: drop-shadow(0 0 10px #00599C) opacity(1); }
+    }
+
+    .eat-react { animation: pulseEatReact 10s infinite; transform-origin: 320px 80px; }
+    .eat-php { animation: pulseEatPHP 10s infinite; transform-origin: 180px 180px; }
+    .eat-laravel { animation: pulseEatLaravel 10s infinite; transform-origin: 580px 220px; }
+    .eat-cpp { animation: pulseEatCPP 10s infinite; transform-origin: 480px 90px; }
+
+    /* Coding Rain Drop */
+    @keyframes rain {
+      0% { translateY: -20px; opacity: 0; }
+      50% { opacity: 0.8; }
+      100% { translateY: 300px; opacity: 0; }
+    }
+    .rain-drop {
+      font-family: monospace;
+      font-size: 10px;
+      fill: #00FF66;
+      animation: rain 4s linear infinite;
+    }
+  </style>
+
+  <!-- Background Card -->
+  <rect width="880" height="300" rx="16" fill="url(#bgGrad)" stroke="#112244" stroke-width="2" />
+  
+  <!-- Cyber Grid -->
+  <rect width="880" height="300" rx="16" fill="url(#grid)" />
+
+  <!-- Neon green border -->
+  <rect x="8" y="8" width="864" height="284" rx="12" fill="none" stroke="#00FF66" stroke-width="1.5" stroke-opacity="0.3" filter="url(#neonGlowGreen)" />
+
+  <!-- Code Rain Drops -->
+  <text x="50" y="0" class="rain-drop" style="animation-duration: 5s; animation-delay: 0.5s;">1 0 1 1 0 1</text>
+  <text x="150" y="0" class="rain-drop" style="animation-duration: 3s; animation-delay: 2s;">r e a c t</text>
+  <text x="280" y="0" class="rain-drop" style="animation-duration: 6s; animation-delay: 1s;">p h p</text>
+  <text x="680" y="0" class="rain-drop" style="animation-duration: 4s; animation-delay: 3s;">d s a</text>
+  <text x="790" y="0" class="rain-drop" style="animation-duration: 5.5s; animation-delay: 1.5s;">0 1 0 0 1 1</text>
+
+  <!-- Tech Dots to be "Eaten" (with tech brand colors) -->
+  <g class="eat-cpp">
+    <circle cx="480" cy="90" r="18" fill="#050e1e" stroke="#00599C" stroke-width="2" />
+    <text x="480" y="94" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">C++</text>
+  </g>
+
+  <g class="eat-php">
+    <circle cx="180" cy="180" r="18" fill="#050e1e" stroke="#8892BF" stroke-width="2" />
+    <text x="180" y="184" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">PHP</text>
+  </g>
+
+  <g class="eat-react">
+    <circle cx="320" cy="80" r="18" fill="#050e1e" stroke="#00F7FF" stroke-width="2" />
+    <text x="320" y="84" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">React</text>
+  </g>
+
+  <g class="eat-laravel">
+    <circle cx="580" cy="220" r="18" fill="#050e1e" stroke="#FF2D20" stroke-width="2" />
+    <text x="580" y="224" font-family="sans-serif" font-size="8" font-weight="bold" fill="#ffffff" text-anchor="middle">Laravel</text>
+  </g>
+
+  <!-- Animated Neon Slithering Snake Path -->
+  <!-- Winding path traversing coordinates of the screen and passing close to tech points -->
+  <path class="snake-body" d="M 50,90 Q 120,40 180,90 T 320,80 T 480,90 T 650,120 T 580,220 T 400,240 T 180,180 T 50,90" fill="none" stroke="#00FF66" stroke-width="6" stroke-linecap="round" filter="url(#neonGlowGreen)" />
+  <path class="snake-body" d="M 50,90 Q 120,40 180,90 T 320,80 T 480,90 T 650,120 T 580,220 T 400,240 T 180,180 T 50,90" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Retro Score Display -->
+  <rect x="680" y="30" width="150" height="45" rx="6" fill="#050a12" stroke="#00FF66" stroke-width="1" stroke-opacity="0.4" />
+  <text x="692" y="47" font-family="monospace" font-size="10" fill="#00FF66" fill-opacity="0.7">SCORE: <tspan fill="#ffffff" font-weight="bold">13370</tspan></text>
+  <text x="692" y="63" font-family="monospace" font-size="10" fill="#00FF66" fill-opacity="0.7">STATUS: <tspan fill="#00FF66" font-weight="bold">EATING CODE</tspan></text>
+
+  <!-- Big Glitched Title Center -->
+  <g transform="translate(440, 160)">
+    <text x="0" y="0" class="glitch-text" font-size="36" text-anchor="middle">AMRIT RAJ</text>
+    <text x="0" y="24" font-family="monospace" font-size="11" fill="#00FF66" letter-spacing="3" text-anchor="middle" font-weight="bold">THE CODE SLITHERER 🐍</text>
+  </g>
+</svg>
