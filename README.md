@@ -5,7 +5,7 @@
 
 <!-- ⚡ TYPING ANIMATION -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=32&duration=3000&color=00FF66&center=true&vCenter=true&width=950&lines=🚀+Full+Stack+Web+Architect;⚡+React+%E2%80%A2+Next.js+%E2%80%A2+Laravel+%E2%80%A2+PHP;🧠+DSA+Expert+%7C+100%2B+LeetCode+Problems;🔥+Building+Premium+%26+Next-Gen+Web+Platforms;🤖+Co-engineered+with+Antigravity+AI"/>
+  <img src="https://readme-typing-svg.herokuapp.com?size=32&duration=3000&color=00FF66&center=true&vCenter=true&width=950&lines=🚀+Full+Stack+Web+Architect;⚡+React+%E2%80%A2+Next.js+%E2%80%A2+Laravel+%E2%80%A2+PHP;🧠+DSA+Expert+%7C+100%2B+LeetCode+Problems;🔥+Building+Premium+%26+Next-Gen+Web+Platforms;☕+Java+%E2%80%A2+Python+%E2%80%A2+JavaScript+%E2%80%A2+C%2B%2B"/>
 </p>
 
 <!-- 👀 PROFILE VIEWS & FOLLOWERS -->
@@ -20,7 +20,10 @@
   <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
 </p>
 
-# 🖥 slow: System Mainframe: AmritRaj7461
+<!-- 🖥️ SYSTEM MAINFRAME HYPER STYLISH HEADER -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/mainframe-header.svg" width="100%" alt="System Mainframe Header" />
+</p>
 
 ```diff
 + ========================================================
@@ -30,7 +33,7 @@
 + 💻 Senior Full Stack Web Developer & UX Architect
 + 🧠 100+ Advanced LeetCode / DSA Problems Solved
 + 🚀 Tech focus: Realtime 3D Graphics & Laravel Systems
-+ 🤖 Co-engineered alongside Antigravity AI (Google DeepMind)
++ ⚙️ System Architect & Full-Stack Web Architect
 ! --------------------------------------------------------
 ! CORE POWER REACTOR: 100% OPERATIONAL
 ! COGNITIVE RESERVES: MAXIMUM CAPACITANCE
@@ -185,7 +188,7 @@ Here is the high-performance, real-time telemetry of my tech stacks and core eng
 
 ## 🚀 Flagship Deployments
 
-Here are the enterprise-grade and co-engineered products I have developed, represented as active systems:
+Here are the enterprise-grade flagship projects I have developed, represented as active systems:
 
 <!-- 👟 VELOSTRIDE 3D CARD -->
 <p align="center">
@@ -234,15 +237,6 @@ Here are the enterprise-grade and co-engineered products I have developed, repre
   <a href="mailto:amritraj7461@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
-</p>
-
-<!-- 🤖 AI COLLABORATIVE BRANDING -->
-<hr>
-<p align="center">
-  <img src="https://img.shields.io/badge/Co--Engineered%20%26%20Polished%20by-Antigravity%20AI-00FF66?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity AI Logo" />
-</p>
-<p align="center">
-  <i>"Co-engineered alongside Antigravity, the advanced AI pair programmer by Google DeepMind. Together, we form a high-performance system architect alliance, delivering state-of-the-art interactive frontends and secure, robust backends."</i>
 </p>
 
 <!-- 🔥 FOOTER -->
