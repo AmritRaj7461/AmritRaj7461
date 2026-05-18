@@ -1,6 +1,6 @@
-<!-- 🔥 FUTURISTIC world-map COORDINATE HUD -->
+<!-- 🔥 QUANTUM SYSTEM CORE TERMINAL HEADER -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/world-map-hud.svg" width="100%" alt="Amrit Raj Coordinate HUD" />
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/system-core.svg" width="100%" alt="Amrit Raj system-core HUD" />
 </p>
 
 <!-- ⚡ TYPING ANIMATION -->
@@ -20,11 +20,11 @@
   <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
 </p>
 
-# 🖥️ System Mainframe: AmritRaj7461
+# 🖥 slow: System Mainframe: AmritRaj7461
 
 ```diff
 + ========================================================
-+ [SYSTEM ONLINE] - AMRIT RAJ MAINFRAME ACTIVE
++ [SYSTEM ONLINE] - AMRIT RAJ CORE ENGINE ACTIVE
 + ========================================================
 + 🎓 CSE Undergraduate (Lovely Professional University)
 + 💻 Senior Full Stack Web Developer & UX Architect
@@ -45,10 +45,102 @@
 
 ## 🛠️ Cybernetic Tech Arsenal
 
-<!-- FUTURISTIC DUAL PANEL SKILL CONSOLE -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/tech-arsenal.svg" width="100%" alt="Tech Arsenal Console" />
-</p>
+Here is the high-performance, real-time telemetry of my tech stacks and core engines. Real icons are fully integrated into this custom grid:
+
+<table align="center" width="100%">
+  <tr>
+    <td width="20%" align="center" style="background-color: #040810; border: 1px solid #112244;">
+      <b style="color: #00F7FF;">🖥️ Languages</b>
+    </td>
+    <td width="80%" align="left" style="background-color: #040810; border: 1px solid #112244;">
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=cpp,java,py,js" alt="Core Languages" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="background-color: #040810; border: 1px solid #112244;">
+      <b style="color: #00FF66;">🎨 Frontend</b>
+    </td>
+    <td align="left" style="background-color: #040810; border: 1px solid #112244;">
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=html,css,tailwind,react,nextjs,threejs" alt="Frontend Arsenal" />
+      </a>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/Framer_Motion-Animation-black?style=for-the-badge&logo=framer&logoColor=00F7FF" />
+      <img src="https://img.shields.io/badge/GSAP-Animation-green?style=for-the-badge&logo=greensock&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="background-color: #040810; border: 1px solid #112244;">
+      <b style="color: #FF007F;">⚙️ Backend</b>
+    </td>
+    <td align="left" style="background-color: #040810; border: 1px solid #112244;">
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=nodejs,express,laravel" alt="Backend Engine" />
+      </a>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/JWT-Secure_Token-00F7FF?style=for-the-badge&logo=json-web-tokens&logoColor=white" />
+      <img src="https://img.shields.io/badge/OAuth_2.0-Auth-00FF66?style=for-the-badge&logo=openid&logoColor=white" />
+      <img src="https://img.shields.io/badge/MVC_Architecture-Structure-FF007F?style=for-the-badge&logo=developer-board&logoColor=white" />
+      <img src="https://img.shields.io/badge/Session_%26_Cookies-Data-orange?style=for-the-badge&logo=cookiecutter&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="background-color: #040810; border: 1px solid #112244;">
+      <b style="color: #FFE873;">💾 Databases</b>
+    </td>
+    <td align="left" style="background-color: #040810; border: 1px solid #112244;">
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgres,firebase" alt="Databases" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="background-color: #040810; border: 1px solid #112244;">
+      <b style="color: #3DDC84;">📱 Mobile</b>
+    </td>
+    <td align="left" style="background-color: #040810; border: 1px solid #112244;">
+      <img src="https://img.shields.io/badge/Jetpack_Compose-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="background-color: #040810; border: 1px solid #112244;">
+      <b style="color: #00F7FF;">🌩️ Cloud &amp; Library</b>
+    </td>
+    <td align="left" style="background-color: #040810; border: 1px solid #112244;">
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=aws" alt="Cloud Infrastructure" />
+      </a>
+      <img src="https://img.shields.io/badge/AWS_EC2-Compute-FF9900?style=for-the-badge&logo=amazon-ec2&logoColor=white" />
+      <img src="https://img.shields.io/badge/AWS_S3-Storage-FF9900?style=for-the-badge&logo=amazon-s3&logoColor=white" />
+      <img src="https://img.shields.io/badge/Chart.js-Data_Visualization-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="background-color: #040810; border: 1px solid #112244;">
+      <b style="color: #ffffff;">🔧 Developer Tools</b>
+    </td>
+    <td align="left" style="background-color: #040810; border: 1px solid #112244;">
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=git,github,docker,linux,postman,vscode" alt="Developer Tools" />
+      </a>
+      <br/><br/>
+      <img src="https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
+      <img src="https://img.shields.io/badge/Android_Studio-IDE-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" />
+      <img src="https://img.shields.io/badge/Thunder_Client-API-blueviolet?style=for-the-badge&logo=thunder&logoColor=white" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="background-color: #040810; border: 1px solid #112244;">
+      <b style="color: #00FF66;">🧠 Key Concepts</b>
+    </td>
+    <td align="left" style="background-color: #040810; border: 1px solid #112244;">
+      <img src="https://img.shields.io/badge/DSA-LeetCode-00FF66?style=for-the-badge&logo=leetcode&logoColor=white" />
+      <img src="https://img.shields.io/badge/REST_APIs-Integration-FF007F?style=for-the-badge&logo=postman&logoColor=white" />
+    </td>
+  </tr>
+</table>
 
 <!-- ⚡ LASER DIVIDER 3 -->
 <p align="center">

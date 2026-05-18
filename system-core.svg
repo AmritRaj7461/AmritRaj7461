@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 280" width="100%" height="280">
+  <defs>
+    <!-- Glowing Filters -->
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowPink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Map Grid Dot Pattern -->
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#00FF66" fill-opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <style>
+    /* Rotations for the Quantum Orbit Rings */
+    @keyframes spinOrbit1 {
+      0% { transform: rotate(0deg) skewX(20deg); }
+      100% { transform: rotate(360deg) skewX(20deg); }
+    }
+    @keyframes spinOrbit2 {
+      0% { transform: rotate(0deg) skewY(-20deg); }
+      100% { transform: rotate(-360deg) skewY(-20deg); }
+    }
+    @keyframes spinOrbit3 {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .orbit-1 { transform-origin: 0px 0px; animation: spinOrbit1 9s linear infinite; }
+    .orbit-2 { transform-origin: 0px 0px; animation: spinOrbit2 12s linear infinite; }
+    .orbit-3 { transform-origin: 0px 0px; animation: spinOrbit3 15s linear infinite; }
+
+    /* Core Pulsing Glow */
+    @keyframes pulseCore {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 4px #00FF66); opacity: 0.8; }
+      50% { transform: scale(1.15); filter: drop-shadow(0 0 15px #00FF66); opacity: 1; }
+    }
+    .quantum-core-sphere { transform-origin: 0px 0px; animation: pulseCore 3s ease-in-out infinite; }
+
+    /* Telemetry scanning bar */
+    @keyframes scannerHUD {
+      0% { transform: translateY(-10px); opacity: 0.1; }
+      50% { opacity: 0.4; }
+      100% { transform: translateY(290px); opacity: 0.1; }
+    }
+    .hud-scanner { animation: scannerHUD 6s linear infinite; }
+
+    /* Shimmering Title */
+    @keyframes shimmerTitle {
+      0%, 100% { fill: #00FF66; filter: drop-shadow(0 0 2px #00FF66); }
+      50% { fill: #00F7FF; filter: drop-shadow(0 0 8px #00F7FF); }
+    }
+    .glowing-title {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      font-weight: 900;
+      letter-spacing: 7px;
+      animation: shimmerTitle 4s ease-in-out infinite;
+    }
+
+    /* Terminal blinking cursor */
+    @keyframes blinkCursor {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    .terminal-cursor { animation: blinkCursor 1s step-end infinite; }
+  </style>
+
+  <!-- Borderless Background Grid -->
+  <rect width="880" height="280" fill="none" />
+  <rect width="880" height="280" fill="url(#dotGrid)" />
+
+  <!-- Scanning HUD Bar -->
+  <rect class="hud-scanner" x="10" width="860" height="2" fill="#00FF66" filter="url(#glowGreen)" />
+
+  <!-- TOP CENTER TEXT: Brand Logo -->
+  <g transform="translate(440, 42)">
+    <text class="glowing-title" x="0" y="0" font-size="28" text-anchor="middle">AMRIT RAJ</text>
+    <text x="0" y="18" font-family="monospace" font-size="10.5" fill="#ffffff" letter-spacing="4" text-anchor="middle" fill-opacity="0.8">SYSTEM ARCHITECT • CORE ENGINE RUNTIME 💻</text>
+  </g>
+
+  <!-- LEFT HUD ELEMENT: Spinning Quantum Holographic Core -->
+  <!-- Outer translation positioning group -->
+  <g transform="translate(160, 155)">
+    <!-- Concentric Dash Background Circles -->
+    <circle cx="0" cy="0" r="105" fill="none" stroke="#00FF66" stroke-width="1.5" stroke-opacity="0.1" />
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#00F7FF" stroke-width="1" stroke-opacity="0.08" stroke-dasharray="3 6" />
+
+    <!-- 3D Orbiting Rings (Animated inner groups) -->
+    <g class="orbit-1">
+      <ellipse cx="0" cy="0" rx="75" ry="25" fill="none" stroke="#00F7FF" stroke-width="2" stroke-dasharray="15 15" filter="url(#glowCyan)" />
+    </g>
+    <g class="orbit-2">
+      <ellipse cx="0" cy="0" rx="75" ry="25" fill="none" stroke="#FF007F" stroke-width="1.8" stroke-dasharray="10 10 30 10" filter="url(#glowPink)" />
+    </g>
+    <g class="orbit-3">
+      <ellipse cx="0" cy="0" rx="75" ry="75" fill="none" stroke="#00FF66" stroke-width="1" stroke-dasharray="5 20" stroke-opacity="0.4" />
+    </g>
+
+    <!-- Center Pulse Sphere -->
+    <g class="quantum-core-sphere">
+      <circle cx="0" cy="0" r="22" fill="#040810" stroke="#00FF66" stroke-width="2.5" />
+      <circle cx="0" cy="0" r="10" fill="#FFFFFF" filter="url(#glowGreen)" />
+    </g>
+
+    <text x="0" y="118" font-family="monospace" font-size="9.5" fill="#00FF66" font-weight="bold" letter-spacing="2.5" text-anchor="middle">QUANTUM CORE: ACTIVE</text>
+  </g>
+
+  <!-- CENTER/RIGHT HUD: Virtual IDE / Terminal Dashboard Mockup -->
+  <!-- Outer positioning group -->
+  <g transform="translate(360, 95)">
+    <!-- Terminal Shell Frame -->
+    <rect width="490" height="150" rx="8" fill="#040810" fill-opacity="0.9" stroke="#112244" stroke-width="1.5" />
+    <rect x="2" y="2" width="486" height="146" rx="6" fill="none" stroke="#00FF66" stroke-width="1.2" stroke-opacity="0.25" filter="url(#glowGreen)" />
+    
+    <!-- Shell Window Control circles -->
+    <circle cx="20" cy="18" r="5" fill="#FF5F56" />
+    <circle cx="35" cy="18" r="5" fill="#FFBD2E" />
+    <circle cx="50" cy="18" r="5" fill="#27C93F" />
+    <text x="75" y="22" font-family="monospace" font-size="10" fill="#ffffff" fill-opacity="0.5">amrit_raj_mainframe.cpp</text>
+
+    <!-- Terminal Code Mockup with blinks -->
+    <g transform="translate(20, 50)" font-family="monospace" font-size="11" font-weight="bold">
+      <text x="0" y="0" fill="#FF007F">#include <tspan fill="#00F7FF">&lt;iostream&gt;</tspan></text>
+      <text x="0" y="18" fill="#00FF66">int <tspan fill="#ffffff">main() {</tspan></text>
+      <text x="20" y="36" fill="#00F7FF">std::cout <tspan fill="#ffffff">&lt;&lt;</tspan> <tspan fill="#FFE873">"BUILDING NEXT-GEN WEB PLATFORMS..."</tspan>;</text>
+      <text x="20" y="54" fill="#00FF66">System::Integrate<tspan fill="#ffffff">(DSA, REST_APIs, MVC);</tspan></text>
+      <text x="20" y="72" fill="#FF007F">return <tspan fill="#00F7FF">1337</tspan>;</text>
+      <text x="0" y="90" fill="#00FF66">}</text>
+      
+      <!-- Blinking Cursor -->
+      <rect class="terminal-cursor" x="55" y="78" width="6" height="11" fill="#00FF66" />
+    </g>
+
+    <!-- Right Side System Telemetry readouts -->
+    <g transform="translate(325, 45)" font-family="monospace" font-size="10" fill="#00FF66" font-weight="bold">
+      <text x="0" y="10" fill="#00F7FF">&gt; CORES: ACTIVE</text>
+      <text x="0" y="24">&gt; DSA: 100+ SOLVED</text>
+      <text x="0" y="38">&gt; OS: LPU-LINUX x64</text>
+      <text x="0" y="52" fill="#FFFFFF">&gt; PORTFOLIO: OVERDRIVE</text>
+      <text x="0" y="66" fill="#FF007F">&gt; ARCH: MVC ACTIVE</text>
+      <text x="0" y="80" fill="#00FF66">&gt; RUNTIME: STABLE 🟢</text>
+    </g>
+  </g>
+</svg>
