@@ -38,7 +38,7 @@
   </defs>
 
   <style>
-    /* Continuous Spin Animations for Trophies */
+    /* Continuous Spin Animations for Trophies (Centered around local origin 0 0) */
     @keyframes spinCW {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -47,14 +47,24 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(-360deg); }
     }
-    @keyframes pulseTrophy {
-      0%, 100% { transform: scale(1); filter: opacity(0.8); }
-      50% { transform: scale(1.08); filter: opacity(1); }
+    .rot-cw {
+      transform-origin: 0px 0px;
+      animation: spinCW 12s linear infinite;
+    }
+    .rot-ccw {
+      transform-origin: 0px 0px;
+      animation: spinCCW 8s linear infinite;
     }
 
-    .rot-cw { transform-origin: center; animation: spinCW 12s linear infinite; }
-    .rot-ccw { transform-origin: center; animation: spinCCW 8s linear infinite; }
-    .pulsing-trophy { animation: pulseTrophy 3.5s ease-in-out infinite; }
+    /* Pulse scale animation (relative to local group center) */
+    @keyframes pulseTrophy {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+    .pulsing-trophy {
+      transform-origin: 0px 0px;
+      animation: pulseTrophy 3.5s ease-in-out infinite;
+    }
   </style>
 
   <!-- Panel Base -->
@@ -62,44 +72,60 @@
   <rect x="2" y="2" width="876" height="146" rx="12" fill="none" stroke="#00F7FF" stroke-width="1.5" stroke-opacity="0.2" filter="url(#glowCyan)" />
 
   <!-- TROPHY 1: GOLD SYSTEM ARCHITECT -->
-  <g class="pulsing-trophy" style="transform-origin: 110px 75px;" transform="translate(110, 75)">
-    <!-- Base Rings -->
-    <circle class="rot-cw" cx="0" cy="0" r="38" fill="none" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="10 15 20" filter="url(#glowGold)" />
-    <circle class="rot-ccw" cx="0" cy="0" r="28" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 8" />
-    <!-- Center Emblem -->
-    <polygon points="0,-16 16,10 -16,10" fill="#FFD700" filter="url(#glowGold)" />
-    <!-- Label -->
-    <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#FFD700" text-anchor="middle" letter-spacing="1">SYSTEM ARCHITECT</text>
+  <!-- Outer translation group -->
+  <g transform="translate(110, 60)">
+    <!-- Inner animated group (No inline transform) -->
+    <g class="pulsing-trophy">
+      <!-- Base Rings -->
+      <circle class="rot-cw" cx="0" cy="0" r="36" fill="none" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="10 15 20" filter="url(#glowGold)" />
+      <circle class="rot-ccw" cx="0" cy="0" r="26" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 8" />
+      <!-- Center Emblem -->
+      <polygon points="0,-16 14,8 -14,8" fill="#FFD700" filter="url(#glowGold)" />
+      <!-- Label -->
+      <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#FFD700" text-anchor="middle" letter-spacing="1">SYSTEM ARCHITECT</text>
+    </g>
   </g>
 
   <!-- TROPHY 2: ALGORITHM SHOGUN -->
-  <g class="pulsing-trophy" style="transform-origin: 330px 75px; animation-delay: 0.5s;" transform="translate(330, 75)">
-    <!-- Base Rings -->
-    <circle class="rot-ccw" cx="0" cy="0" r="38" fill="none" stroke="#00F7FF" stroke-width="1.5" stroke-dasharray="8 8 16 12" filter="url(#glowCyan)" />
-    <!-- Center Emblem -->
-    <path d="M -12,-12 H 12 V 12 H -12 Z" fill="#00F7FF" filter="url(#glowCyan)" transform="rotate(45)" />
-    <!-- Label -->
-    <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#00F7FF" text-anchor="middle" letter-spacing="1">ALGORITHM SHOGUN</text>
+  <!-- Outer translation group -->
+  <g transform="translate(330, 60)">
+    <!-- Inner animated group (No inline transform) -->
+    <g class="pulsing-trophy" style="animation-delay: 0.5s;">
+      <!-- Base Rings -->
+      <circle class="rot-ccw" cx="0" cy="0" r="36" fill="none" stroke="#00F7FF" stroke-width="1.5" stroke-dasharray="8 8 16 12" filter="url(#glowCyan)" />
+      <!-- Center Emblem -->
+      <path d="M -10,-10 H 10 V 10 H -10 Z" fill="#00F7FF" filter="url(#glowCyan)" transform="rotate(45)" />
+      <!-- Label -->
+      <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#00F7FF" text-anchor="middle" letter-spacing="1">ALGORITHM SHOGUN</text>
+    </g>
   </g>
 
   <!-- TROPHY 3: 3D WEB MASTER -->
-  <g class="pulsing-trophy" style="transform-origin: 550px 75px; animation-delay: 1.0s;" transform="translate(550, 75)">
-    <!-- Base Rings -->
-    <circle class="rot-cw" cx="0" cy="0" r="38" fill="none" stroke="#00FF66" stroke-width="1.5" stroke-dasharray="12 12" filter="url(#glowGreen)" />
-    <!-- Center Emblem -->
-    <circle cx="0" cy="0" r="14" fill="none" stroke="#00FF66" stroke-width="3" filter="url(#glowGreen)" />
-    <circle cx="0" cy="0" r="5" fill="#FFFFFF" />
-    <!-- Label -->
-    <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#00FF66" text-anchor="middle" letter-spacing="1">3D WEB MASTER</text>
+  <!-- Outer translation group -->
+  <g transform="translate(550, 60)">
+    <!-- Inner animated group (No inline transform) -->
+    <g class="pulsing-trophy" style="animation-delay: 1.0s;">
+      <!-- Base Rings -->
+      <circle class="rot-cw" cx="0" cy="0" r="36" fill="none" stroke="#00FF66" stroke-width="1.5" stroke-dasharray="12 12" filter="url(#glowGreen)" />
+      <!-- Center Emblem -->
+      <circle cx="0" cy="0" r="14" fill="none" stroke="#00FF66" stroke-width="3" filter="url(#glowGreen)" />
+      <circle cx="0" cy="0" r="5" fill="#FFFFFF" />
+      <!-- Label -->
+      <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#00FF66" text-anchor="middle" letter-spacing="1">3D WEB MASTER</text>
+    </g>
   </g>
 
   <!-- TROPHY 4: LARAVEL EXPERT -->
-  <g class="pulsing-trophy" style="transform-origin: 770px 75px; animation-delay: 1.5s;" transform="translate(770, 75)">
-    <!-- Base Rings -->
-    <circle class="rot-ccw" cx="0" cy="0" r="38" fill="none" stroke="#FF007F" stroke-width="1.5" stroke-dasharray="6 12" filter="url(#glowPink)" />
-    <!-- Center Emblem -->
-    <path d="M -12,-14 L 12,-14 Q 12,-3 0,16 Q -12,-3 -12,-14 Z" fill="#FF007F" filter="url(#glowPink)" />
-    <!-- Label -->
-    <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#FF007F" text-anchor="middle" letter-spacing="1">LARAVEL EXPERT</text>
+  <!-- Outer translation group -->
+  <g transform="translate(770, 60)">
+    <!-- Inner animated group (No inline transform) -->
+    <g class="pulsing-trophy" style="animation-delay: 1.5s;">
+      <!-- Base Rings -->
+      <circle class="rot-ccw" cx="0" cy="0" r="36" fill="none" stroke="#FF007F" stroke-width="1.5" stroke-dasharray="6 12" filter="url(#glowPink)" />
+      <!-- Center Emblem -->
+      <path d="M -12,-14 L 12,-14 Q 12,-3 0,16 Q -12,-3 -12,-14 Z" fill="#FF007F" filter="url(#glowPink)" />
+      <!-- Label -->
+      <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#FF007F" text-anchor="middle" letter-spacing="1">LARAVEL EXPERT</text>
+    </g>
   </g>
 </svg>

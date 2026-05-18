@@ -18,29 +18,27 @@
 
     <!-- Glassmorphic Gradient -->
     <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#071120" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#030810" stop-opacity="0.9" />
-    </linearGradient>
-
-    <!-- Glowing Lines -->
-    <linearGradient id="neonGreenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FF66" />
-      <stop offset="100%" stop-color="#0088FF" />
+      <stop offset="0%" stop-color="#071120" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#030810" stop-opacity="0.95" />
     </linearGradient>
   </defs>
 
   <style>
-    /* Floating animations for skill pods */
+    /* Floating animations for nested skill groups (No transform overrides) */
     @keyframes floatPod1 {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-6px) rotate(-1.5deg); }
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
     }
     @keyframes floatPod2 {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-8px) rotate(1deg); }
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
     }
-    .float-group-1 { animation: floatPod1 5s ease-in-out infinite; }
-    .float-group-2 { animation: floatPod2 6s ease-in-out infinite 1s; }
+    .float-group-1 {
+      animation: floatPod1 5s ease-in-out infinite;
+    }
+    .float-group-2 {
+      animation: floatPod2 5s ease-in-out infinite 1s;
+    }
 
     /* Animated connector pulses */
     @keyframes tracePulse {
@@ -49,7 +47,7 @@
     }
     .connector-wire {
       stroke-dasharray: 6 14;
-      animation: tracePulse 2s linear infinite;
+      animation: tracePulse 2.5s linear infinite;
     }
   </style>
 
@@ -57,85 +55,93 @@
   <rect width="880" height="200" fill="none" />
 
   <!-- SECTION 1: FRONTEND CONSOLE ENGINE -->
-  <g class="float-group-1" transform="translate(10, 0)">
-    <!-- Base Panel -->
-    <rect x="10" y="20" width="410" height="160" rx="12" fill="url(#glassGrad)" stroke="#112244" stroke-width="1.5" />
-    <rect x="12" y="22" width="406" height="156" rx="10" fill="none" stroke="#00F7FF" stroke-width="1.5" stroke-opacity="0.3" filter="url(#glowCyan)" />
-    
-    <text x="30" y="48" fill="#00F7FF" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="3" filter="url(#glowCyan)">FRONTEND SYSTEM ENGINE</text>
-    <line x1="30" y1="56" x2="390" y2="56" stroke="#00F7FF" stroke-width="1" stroke-opacity="0.3" />
+  <!-- Outer positioning translation group -->
+  <g transform="translate(10, 0)">
+    <!-- Inner animated float group (No inline transform) -->
+    <g class="float-group-1">
+      <!-- Base Panel -->
+      <rect x="10" y="20" width="410" height="160" rx="12" fill="url(#glassGrad)" stroke="#112244" stroke-width="1.5" />
+      <rect x="12" y="22" width="406" height="156" rx="10" fill="none" stroke="#00F7FF" stroke-width="1.5" stroke-opacity="0.3" filter="url(#glowCyan)" />
+      
+      <text x="30" y="48" fill="#00F7FF" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="3" filter="url(#glowCyan)">FRONTEND SYSTEM ENGINE</text>
+      <line x1="30" y1="56" x2="390" y2="56" stroke="#00F7FF" stroke-width="1" stroke-opacity="0.3" />
 
-    <!-- Animated connecting traces -->
-    <path class="connector-wire" d="M 60,110 L 370,110" fill="none" stroke="#00F7FF" stroke-opacity="0.5" stroke-width="1.5" />
+      <!-- Animated connecting traces -->
+      <path class="connector-wire" d="M 60,110 L 370,110" fill="none" stroke="#00F7FF" stroke-opacity="0.5" stroke-width="1.5" />
 
-    <!-- Hexagonal / Circular Skill Pods -->
-    <g transform="translate(30, 75)">
-      <!-- HTML/CSS -->
-      <g transform="translate(10, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#E34F26" stroke-width="2" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">HTML5</text>
-      </g>
-      <!-- JS -->
-      <g transform="translate(85, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#F7DF1E" stroke-width="2" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">JS/TS</text>
-      </g>
-      <!-- React -->
-      <g transform="translate(160, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00F7FF" stroke-width="2" filter="url(#glowCyan)" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">React</text>
-      </g>
-      <!-- NextJS -->
-      <g transform="translate(235, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#FFFFFF" stroke-width="2" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Next.js</text>
-      </g>
-      <!-- ThreeJS -->
-      <g transform="translate(310, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00FF66" stroke-width="2" filter="url(#glowGreen)" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">3D/R3F</text>
+      <!-- Hexagonal / Circular Skill Pods -->
+      <g transform="translate(30, 75)">
+        <!-- HTML/CSS -->
+        <g transform="translate(10, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#E34F26" stroke-width="2" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">HTML5</text>
+        </g>
+        <!-- JS -->
+        <g transform="translate(85, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#F7DF1E" stroke-width="2" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">JS/TS</text>
+        </g>
+        <!-- React -->
+        <g transform="translate(160, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00F7FF" stroke-width="2" filter="url(#glowCyan)" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">React</text>
+        </g>
+        <!-- NextJS -->
+        <g transform="translate(235, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#FFFFFF" stroke-width="2" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Next.js</text>
+        </g>
+        <!-- ThreeJS -->
+        <g transform="translate(310, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00FF66" stroke-width="2" filter="url(#glowGreen)" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">3D/R3F</text>
+        </g>
       </g>
     </g>
   </g>
 
   <!-- SECTION 2: BACKEND LOGIC ORCHESTRATION -->
-  <g class="float-group-2" transform="translate(450, 0)">
-    <!-- Base Panel -->
-    <rect x="10" y="20" width="410" height="160" rx="12" fill="url(#glassGrad)" stroke="#112244" stroke-width="1.5" />
-    <rect x="12" y="22" width="406" height="156" rx="10" fill="none" stroke="#00FF66" stroke-width="1.5" stroke-opacity="0.3" filter="url(#glowGreen)" />
+  <!-- Outer positioning translation group -->
+  <g transform="translate(450, 0)">
+    <!-- Inner animated float group (No inline transform) -->
+    <g class="float-group-2">
+      <!-- Base Panel -->
+      <rect x="10" y="20" width="410" height="160" rx="12" fill="url(#glassGrad)" stroke="#112244" stroke-width="1.5" />
+      <rect x="12" y="22" width="406" height="156" rx="10" fill="none" stroke="#00FF66" stroke-width="1.5" stroke-opacity="0.3" filter="url(#glowGreen)" />
 
-    <text x="30" y="48" fill="#00FF66" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="3" filter="url(#glowGreen)">BACKEND CONSOLE ENGINE</text>
-    <line x1="30" y1="56" x2="390" y2="56" stroke="#00FF66" stroke-width="1" stroke-opacity="0.3" />
+      <text x="30" y="48" fill="#00FF66" font-family="monospace" font-size="12" font-weight="bold" letter-spacing="3" filter="url(#glowGreen)">BACKEND CONSOLE ENGINE</text>
+      <line x1="30" y1="56" x2="390" y2="56" stroke="#00FF66" stroke-width="1" stroke-opacity="0.3" />
 
-    <!-- Animated connecting traces -->
-    <path class="connector-wire" d="M 60,110 L 370,110" fill="none" stroke="#00FF66" stroke-opacity="0.5" stroke-width="1.5" style="animation-direction: reverse;" />
+      <!-- Animated connecting traces -->
+      <path class="connector-wire" d="M 60,110 L 370,110" fill="none" stroke="#00FF66" stroke-opacity="0.5" stroke-width="1.5" style="animation-direction: reverse;" />
 
-    <!-- Skill Pods -->
-    <g transform="translate(30, 75)">
-      <!-- PHP/Laravel -->
-      <g transform="translate(10, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#FF2D20" stroke-width="2" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">Laravel</text>
-      </g>
-      <!-- MySQL -->
-      <g transform="translate(85, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00758F" stroke-width="2" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">SQL</text>
-      </g>
-      <!-- C++ -->
-      <g transform="translate(160, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00599C" stroke-width="2" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">C++</text>
-      </g>
-      <!-- Python -->
-      <g transform="translate(235, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#FFE873" stroke-width="2" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">Python</text>
-      </g>
-      <!-- Docker/Git -->
-      <g transform="translate(310, 0)">
-        <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00F7FF" stroke-width="2" filter="url(#glowCyan)" />
-        <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Docker</text>
+      <!-- Skill Pods -->
+      <g transform="translate(30, 75)">
+        <!-- PHP/Laravel -->
+        <g transform="translate(10, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#FF2D20" stroke-width="2" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="9" font-weight="bold" fill="#ffffff" text-anchor="middle">Laravel</text>
+        </g>
+        <!-- MySQL -->
+        <g transform="translate(85, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00758F" stroke-width="2" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">SQL</text>
+        </g>
+        <!-- C++ -->
+        <g transform="translate(160, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00599C" stroke-width="2" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10.5" font-weight="bold" fill="#ffffff" text-anchor="middle">C++</text>
+        </g>
+        <!-- Python -->
+        <g transform="translate(235, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#FFE873" stroke-width="2" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="bold" fill="#ffffff" text-anchor="middle">Python</text>
+        </g>
+        <!-- Docker/Git -->
+        <g transform="translate(310, 0)">
+          <circle cx="30" cy="35" r="24" fill="#040812" stroke="#00F7FF" stroke-width="2" filter="url(#glowCyan)" />
+          <text x="30" y="39" font-family="'Segoe UI', sans-serif" font-size="9.5" font-weight="bold" fill="#ffffff" text-anchor="middle">Docker</text>
+        </g>
       </g>
     </g>
   </g>
