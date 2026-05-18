@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 150" width="100%" height="150">
+  <defs>
+    <!-- Glowing Filters -->
+    <filter id="glowGold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowPink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Card Background -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050e1a" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#020610" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* Continuous Spin Animations for Trophies */
+    @keyframes spinCW {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes spinCCW {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-360deg); }
+    }
+    @keyframes pulseTrophy {
+      0%, 100% { transform: scale(1); filter: opacity(0.8); }
+      50% { transform: scale(1.08); filter: opacity(1); }
+    }
+
+    .rot-cw { transform-origin: center; animation: spinCW 12s linear infinite; }
+    .rot-ccw { transform-origin: center; animation: spinCCW 8s linear infinite; }
+    .pulsing-trophy { animation: pulseTrophy 3.5s ease-in-out infinite; }
+  </style>
+
+  <!-- Panel Base -->
+  <rect width="880" height="150" rx="14" fill="url(#glass)" stroke="#112244" stroke-width="1.8" />
+  <rect x="2" y="2" width="876" height="146" rx="12" fill="none" stroke="#00F7FF" stroke-width="1.5" stroke-opacity="0.2" filter="url(#glowCyan)" />
+
+  <!-- TROPHY 1: GOLD SYSTEM ARCHITECT -->
+  <g class="pulsing-trophy" style="transform-origin: 110px 75px;" transform="translate(110, 75)">
+    <!-- Base Rings -->
+    <circle class="rot-cw" cx="0" cy="0" r="38" fill="none" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="10 15 20" filter="url(#glowGold)" />
+    <circle class="rot-ccw" cx="0" cy="0" r="28" fill="none" stroke="#FFFFFF" stroke-opacity="0.3" stroke-dasharray="4 8" />
+    <!-- Center Emblem -->
+    <polygon points="0,-16 16,10 -16,10" fill="#FFD700" filter="url(#glowGold)" />
+    <!-- Label -->
+    <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#FFD700" text-anchor="middle" letter-spacing="1">SYSTEM ARCHITECT</text>
+  </g>
+
+  <!-- TROPHY 2: ALGORITHM SHOGUN -->
+  <g class="pulsing-trophy" style="transform-origin: 330px 75px; animation-delay: 0.5s;" transform="translate(330, 75)">
+    <!-- Base Rings -->
+    <circle class="rot-ccw" cx="0" cy="0" r="38" fill="none" stroke="#00F7FF" stroke-width="1.5" stroke-dasharray="8 8 16 12" filter="url(#glowCyan)" />
+    <!-- Center Emblem -->
+    <path d="M -12,-12 H 12 V 12 H -12 Z" fill="#00F7FF" filter="url(#glowCyan)" transform="rotate(45)" />
+    <!-- Label -->
+    <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#00F7FF" text-anchor="middle" letter-spacing="1">ALGORITHM SHOGUN</text>
+  </g>
+
+  <!-- TROPHY 3: 3D WEB MASTER -->
+  <g class="pulsing-trophy" style="transform-origin: 550px 75px; animation-delay: 1.0s;" transform="translate(550, 75)">
+    <!-- Base Rings -->
+    <circle class="rot-cw" cx="0" cy="0" r="38" fill="none" stroke="#00FF66" stroke-width="1.5" stroke-dasharray="12 12" filter="url(#glowGreen)" />
+    <!-- Center Emblem -->
+    <circle cx="0" cy="0" r="14" fill="none" stroke="#00FF66" stroke-width="3" filter="url(#glowGreen)" />
+    <circle cx="0" cy="0" r="5" fill="#FFFFFF" />
+    <!-- Label -->
+    <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#00FF66" text-anchor="middle" letter-spacing="1">3D WEB MASTER</text>
+  </g>
+
+  <!-- TROPHY 4: LARAVEL EXPERT -->
+  <g class="pulsing-trophy" style="transform-origin: 770px 75px; animation-delay: 1.5s;" transform="translate(770, 75)">
+    <!-- Base Rings -->
+    <circle class="rot-ccw" cx="0" cy="0" r="38" fill="none" stroke="#FF007F" stroke-width="1.5" stroke-dasharray="6 12" filter="url(#glowPink)" />
+    <!-- Center Emblem -->
+    <path d="M -12,-14 L 12,-14 Q 12,-3 0,16 Q -12,-3 -12,-14 Z" fill="#FF007F" filter="url(#glowPink)" />
+    <!-- Label -->
+    <text x="0" y="58" font-family="'Segoe UI', sans-serif" font-size="11" font-weight="bold" fill="#FF007F" text-anchor="middle" letter-spacing="1">LARAVEL EXPERT</text>
+  </g>
+</svg>

@@ -1,6 +1,6 @@
-<!-- 🔥 RETRO SHIELD SNAKE HEADER -->
+<!-- 🔥 FUTURISTIC world-map COORDINATE HUD -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/snake-header.svg" width="100%" alt="Amrit Raj Retro Snake Banner" />
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/world-map-hud.svg" width="100%" alt="Amrit Raj Coordinate HUD" />
 </p>
 
 <!-- ⚡ TYPING ANIMATION -->
@@ -24,7 +24,7 @@
 
 ```diff
 + ========================================================
-+ [SYSTEM ONLINE] - AMRIT RAJ CORE LOGS
++ [SYSTEM ONLINE] - AMRIT RAJ MAINFRAME ACTIVE
 + ========================================================
 + 🎓 CSE Undergraduate (Lovely Professional University)
 + 💻 Senior Full Stack Web Developer & UX Architect
@@ -45,22 +45,10 @@
 
 ## 🛠️ Cybernetic Tech Arsenal
 
-<table align="center" width="100%">
-  <tr>
-    <td width="50%" align="center">
-      <h3>🎨 Frontend Interface Engine</h3>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,tailwind,bootstrap,threejs" alt="Frontend Arsenal" />
-      </a>
-    </td>
-    <td width="50%" align="center">
-      <h3>⚙️ Backend Logic &amp; Orchestration</h3>
-      <a href="https://skillicons.dev">
-        <img src="https://skillicons.dev/icons?i=php,laravel,mysql,cpp,python,git,github,docker" alt="Backend Arsenal" />
-      </a>
-    </td>
-  </tr>
-</table>
+<!-- FUTURISTIC DUAL PANEL SKILL CONSOLE -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/tech-arsenal.svg" width="100%" alt="Tech Arsenal Console" />
+</p>
 
 <!-- ⚡ LASER DIVIDER 3 -->
 <p align="center">
@@ -69,19 +57,9 @@
 
 ## 📊 Live Developer Metrics & Analytics
 
+<!-- DYNAMIC DIAL METRICS SPEEDOMETERS -->
 <p align="center">
-  <a href="https://github.com/AmritRaj7461">
-    <img src="https://github-readme-stats.vercel.app/api?username=AmritRaj7461&show_icons=true&theme=tokyonight&hide_border=true" height="185px" alt="Amrit's GitHub Stats" />
-  </a>
-  <a href="https://github.com/AmritRaj7461">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=AmritRaj7461&theme=tokyonight&hide_border=true" height="185px" alt="Amrit's GitHub Streak" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/AmritRaj7461">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmritRaj7461&layout=compact&theme=tokyonight&hide_border=true" height="160px" alt="Top Languages" />
-  </a>
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/dev-metrics.svg" width="100%" alt="Developer Metrics Dashboard" />
 </p>
 
 <!-- ⚡ LASER DIVIDER 4 -->
@@ -90,18 +68,25 @@
 </p>
 
 ## 🏆 GitHub Achievement Trophy Room
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=AmritRaj7461&theme=algolia&no-frame=true&row=1&column=7" alt="Achievements Trophies" />
-</p>
 
----
-
-## 📈 Activity Pulse
+<!-- FUTURISTIC GLOWING ACHIEVEMENT RINGS -->
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AmritRaj7461&theme=react-dark&bg_color=0D1117&hide_border=true&line=00F7FF&point=FFFFFF" width="100%" alt="Activity Graph" />
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/cyber-trophies.svg" width="100%" alt="Cyber Trophies Dashboard" />
 </p>
 
 <!-- ⚡ LASER DIVIDER 5 -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
+</p>
+
+## 📈 Activity Pulse
+
+<!-- LAYERED SINE WAVE ACTIVITY CHART -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/activity-graph.svg" width="100%" alt="Cyber Activity Wave Pulse" />
+</p>
+
+<!-- ⚡ LASER DIVIDER 6 -->
 <p align="center">
   <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
 </p>
@@ -136,16 +121,6 @@ Here are the enterprise-grade and co-engineered products I have developed, repre
   <a href="https://github.com/AmritRaj7461">
     <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/nexus-card.svg" width="100%" alt="NEXUS AI Card" />
   </a>
-</p>
-
-<!-- ⚡ LASER DIVIDER 6 -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/neon-divider.svg" width="100%" />
-</p>
-
-## 🐍 Contribution Grid Snake
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/output/github-contribution-grid-snake.svg" alt="Contribution Snake" />
 </p>
 
 <!-- ⚡ LASER DIVIDER 7 -->

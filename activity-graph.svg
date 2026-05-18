@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 150" width="100%" height="150">
+  <defs>
+    <!-- Glowing Filters -->
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowPink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Base Panel Background -->
+    <linearGradient id="glass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050a14" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#010408" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* Sine Wave Translation Loop */
+    @keyframes waveShift {
+      0% { stroke-dashoffset: 360; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .wave-line-1 {
+      stroke-dasharray: 180 180;
+      animation: waveShift 5s linear infinite;
+    }
+    .wave-line-2 {
+      stroke-dasharray: 120 120;
+      animation: waveShift 3s linear infinite;
+    }
+    .wave-line-3 {
+      stroke-dasharray: 90 90;
+      animation: waveShift 4s linear infinite;
+    }
+  </style>
+
+  <!-- Panel Base -->
+  <rect width="880" height="150" rx="14" fill="url(#glass)" stroke="#112244" stroke-width="1.8" />
+  <rect x="2" y="2" width="876" height="146" rx="12" fill="none" stroke="#00FF66" stroke-width="1.5" stroke-opacity="0.2" filter="url(#glowGreen)" />
+
+  <!-- Background Graph Grid -->
+  <g stroke="#112244" stroke-width="0.8" stroke-dasharray="4 8" stroke-opacity="0.5">
+    <line x1="110" y1="0" x2="110" y2="150" />
+    <line x1="220" y1="0" x2="220" y2="150" />
+    <line x1="330" y1="0" x2="330" y2="150" />
+    <line x1="440" y1="0" x2="440" y2="150" />
+    <line x1="550" y1="0" x2="550" y2="150" />
+    <line x1="660" y1="0" x2="660" y2="150" />
+    <line x1="770" y1="0" x2="770" y2="150" />
+    
+    <line x1="0" y1="37.5" x2="880" y2="37.5" />
+    <line x1="0" y1="75" x2="880" y2="75" />
+    <line x1="0" y1="112.5" x2="880" y2="112.5" />
+  </g>
+
+  <!-- Three Overlapping Glowing Activity Sine Waves -->
+  <!-- Layer 1: Green -->
+  <path class="wave-line-1" d="M 0,75 Q 110,120 220,75 T 440,75 T 660,75 T 880,75" fill="none" stroke="#00FF66" stroke-width="3.5" stroke-opacity="0.75" filter="url(#glowGreen)" />
+  
+  <!-- Layer 2: Cyan -->
+  <path class="wave-line-2" d="M 0,75 Q 110,30 220,75 T 440,75 T 660,75 T 880,75" fill="none" stroke="#00F7FF" stroke-width="2" stroke-opacity="0.6" filter="url(#glowCyan)" />
+
+  <!-- Layer 3: Hot Pink -->
+  <path class="wave-line-3" d="M 0,75 Q 110,10 220,75 T 440,75 T 660,75 T 880,75" fill="none" stroke="#FF007F" stroke-width="1.5" stroke-opacity="0.5" filter="url(#glowPink)" />
+
+  <!-- Diagnostics Readout Overlay -->
+  <g transform="translate(25, 25)" font-family="monospace" font-size="10.5" fill="#00FF66" font-weight="bold">
+    <text x="0" y="0">&gt; PULSE FREQUENCY: 99.4Hz</text>
+    <text x="0" y="16">&gt; DIAGNOSTICS: STABLE</text>
+    <text x="0" y="32" fill="#FFFFFF">&gt; ACTIVE BANDWIDTH: OPTIMIZED</text>
+  </g>
+</svg>
