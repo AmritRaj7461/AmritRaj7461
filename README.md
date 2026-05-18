@@ -1,6 +1,6 @@
-<!-- 🔥 HEADER CYBER BANNER -->
+<!-- 🔥 HEADER CYBER HUD BANNER -->
 <p align="center">
-  <img src="cyber-card.svg" width="100%" alt="Amrit Raj Cyber Developer Card" />
+  <img src="https://raw.githubusercontent.com/AmritRaj7461/AmritRaj7461/main/cyber-card.svg" width="100%" alt="Amrit Raj Cyber Developer HUD" />
 </p>
 
 <!-- ⚡ TYPING ANIMATION -->
@@ -17,14 +17,22 @@
 
 ---
 
-# 👨‍💻 System Log: AmritRaj7461
+# 🖥️ System Mainframe Diagnostics
 
 ```diff
-+ 🎓 CSE Undergraduate (Lovely Professional University)
++ ========================================================
++ [SYSTEM ONLINE] - AMRIT RAJ CENTRAL CORE
++ ========================================================
++ 🎓 B.Tech CSE Undergrad (Lovely Professional University)
 + 💻 Senior Full Stack Web Developer & UX Architect
-+ 🧠 100+ Advanced Algorithmic Problems Solved (LeetCode / DSA)
-+ 🚀 Building Interactive 3D Realtime Web Apps & High-Concurrency Platforms
-+ 🤖 Core Co-Engineering and Deep Optimization with Antigravity AI (DeepMind)
++ 🧠 100+ Advanced LeetCode / DSA Problems Solved
++ 🚀 Tech focus: Realtime 3D Graphics & Laravel Systems
++ 🤖 Co-engineered alongside Antigravity AI (Google DeepMind)
+! --------------------------------------------------------
+! CORE POWER REACTOR: 100% OPERATIONAL
+! COGNITIVE RESERVES: MAXIMUM CAPACITANCE
+! ACTIVE PROTOCOLS: BUILDING NEXT-LEVEL PORTFOLIOS
++ ========================================================
 ```
 
 ---
@@ -34,13 +42,13 @@
 <table align="center" width="100%">
   <tr>
     <td width="50%" align="center">
-      <h3>🎨 Frontend Architectures</h3>
+      <h3>🎨 Frontend Interface Engine</h3>
       <a href="https://skillicons.dev">
         <img src="https://skillicons.dev/icons?i=html,css,js,react,nextjs,tailwind,bootstrap,threejs" alt="Frontend Arsenal" />
       </a>
     </td>
     <td width="50%" align="center">
-      <h3>⚙️ Backend & Systems</h3>
+      <h3>⚙️ Backend Logic &amp; Orchestration</h3>
       <a href="https://skillicons.dev">
         <img src="https://skillicons.dev/icons?i=php,laravel,mysql,cpp,python,git,github,docker" alt="Backend Arsenal" />
       </a>
@@ -50,40 +58,40 @@
 
 ---
 
-## 📊 Live Metrics & Developer Stats
+## 📊 Live Developer Metrics & Analytics
 
 <p align="center">
   <a href="https://github.com/AmritRaj7461">
-    <img src="https://github-readme-stats.vercel.app/api?username=AmritRaj7461&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=00F7FF&text_color=FFFFFF" height="175px" alt="Amrit's GitHub Stats" />
+    <img src="https://github-readme-stats.vercel.app/api?username=AmritRaj7461&show_icons=true&theme=tokyonight&hide_border=true" height="185px" alt="Amrit's GitHub Stats" />
   </a>
   <a href="https://github.com/AmritRaj7461">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=AmritRaj7461&theme=tokyonight&hide_border=true&background=0D1117&ring=00F7FF&fire=00F7FF&currStreakLabel=00F7FF" height="175px" alt="Amrit's GitHub Streak" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=AmritRaj7461&theme=tokyonight&hide_border=true" height="185px" alt="Amrit's GitHub Streak" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/AmritRaj7461">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmritRaj7461&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&text_color=FFFFFF" height="155px" alt="Top Languages" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AmritRaj7461&layout=compact&theme=tokyonight&hide_border=true" height="160px" alt="Top Languages" />
   </a>
 </p>
 
 ---
 
-## 🏆 GitHub Trophy Room
+## 🏆 GitHub Achievement Trophy Room
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=AmritRaj7461&theme=algolia&no-frame=true&row=1&column=7" alt="Achievements Trophies" />
 </p>
 
 ---
 
-## 📈 Activity Waveform
+## 📈 Activity Pulse
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=AmritRaj7461&theme=react-dark&bg_color=0D1117&hide_border=true&line=00F7FF&point=FFFFFF" width="100%" alt="Activity Graph" />
 </p>
 
 ---
 
-## 🚀 Flagship Project Deployments
+## 🚀 Advanced Flagship Deployments
 
 Here are the enterprise-grade and co-engineered products I have developed:
 
@@ -96,6 +104,7 @@ Here are the enterprise-grade and co-engineered products I have developed:
         <img src="https://img.shields.io/badge/Status-100%25%20Stable-00FF66?style=flat-square" />
         <img src="https://img.shields.io/badge/Stack-Next.js%20%7C%20Three.js%20%7C%20GSAP-00F7FF?style=flat-square" />
       </p>
+      <pre><code>[████████████████████] 100% DEPLOYED &amp; OPERATIONAL</code></pre>
       <ul>
         <li>Scroll-triggered shoe buildup and layer animations.</li>
         <li>Glassmorphic UI overlay with responsive frame adjustments.</li>
@@ -110,6 +119,7 @@ Here are the enterprise-grade and co-engineered products I have developed:
         <img src="https://img.shields.io/badge/Status-90%25%20Active%20Beta-FFBD2E?style=flat-square" />
         <img src="https://img.shields.io/badge/Stack-React%20%7C%20Node%20%7C%20Express-8A2BE2?style=flat-square" />
       </p>
+      <pre><code>[██████████████████░░] 90% SYSTEM INTEGRATION STAGE</code></pre>
       <ul>
         <li>Automated scoring algorithm with instantaneous result breakdowns.</li>
         <li>Custom secure browser focus locking systems.</li>
@@ -118,12 +128,13 @@ Here are the enterprise-grade and co-engineered products I have developed:
   </tr>
   <tr>
     <td>
-      <h3>💉 VacciCare | Vaccine Logistics &amp; Booking Portal</h3>
+      <h3>💉 VacciCare | Vaccine Logistics Portal</h3>
       <p><i>A Laravel-driven logistics system for administrative medical tracking and vaccine appointments.</i></p>
       <p>
         <img src="https://img.shields.io/badge/Status-Completed-00FF66?style=flat-square" />
         <img src="https://img.shields.io/badge/Stack-Laravel%20%7C%20MySQL%20%7C%20Alpine-FF007F?style=flat-square" />
       </p>
+      <pre><code>[████████████████████] 100% DEPLOYED &amp; SECURED</code></pre>
       <ul>
         <li>Dynamic patient tracking and administrative dashboard.</li>
         <li>Batch stock level triggers and high-security session handshakes.</li>
@@ -138,6 +149,7 @@ Here are the enterprise-grade and co-engineered products I have developed:
         <img src="https://img.shields.io/badge/Status-Active%20Dev-0088FF?style=flat-square" />
         <img src="https://img.shields.io/badge/Stack-Python%20%7C%20Vosk%20%7C%20GoogleAPI-FF8C00?style=flat-square" />
       </p>
+      <pre><code>[██████████████████░░] 90% COGNITIVE COMPILING</code></pre>
       <ul>
         <li>Local wake-word detection constraints for fast offline captures.</li>
         <li>Deep operating system automation commands.</li>
