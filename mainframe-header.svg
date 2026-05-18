@@ -24,19 +24,19 @@
 
   <g transform="translate(0, 32)">
     <!-- Terminal monitor icon -->
-    <text x="0" y="0" font-family="'Segoe UI Emoji', sans-serif" font-size="20">🖥️</text>
+    <text x="5" y="-2" font-family="'Segoe UI Emoji', sans-serif" font-size="20">🖥️</text>
     
-    <!-- Stylized Header Text with bracket framing -->
-    <text x="35" y="-2" font-family="monospace" font-size="16" font-weight="bold" fill="#00F7FF" filter="url(#neonCyan)" letter-spacing="3.5">
+    <!-- Stylized Header Text with bracket framing (Refined font sizes and spacing to avoid overlaps) -->
+    <text x="40" y="-4" font-family="monospace" font-size="14.5" font-weight="bold" fill="#00F7FF" filter="url(#neonCyan)" letter-spacing="3">
       [ <tspan fill="#ffffff">SYSTEM MAINFRAME</tspan> // AMRIT_RAJ_7461 ]
     </text>
 
-    <!-- Telemetry indicator dot -->
-    <circle class="pulsing-status-dot" cx="440" cy="-7" r="4.5" fill="#00FF66" />
-    <text x="452" y="-3" font-family="monospace" font-size="10.5" fill="#00FF66" font-weight="bold" letter-spacing="1">ONLINE</text>
+    <!-- Telemetry status indicator shifted to the far right -->
+    <circle class="pulsing-status-dot" cx="795" cy="-8" r="4.5" fill="#00FF66" />
+    <text x="807" y="-4" font-family="monospace" font-size="10.5" fill="#00FF66" font-weight="bold" letter-spacing="1">ONLINE</text>
 
-    <!-- Thin baseline divider trail -->
-    <line x1="515" y1="-7" x2="880" y2="-7" stroke="#112244" stroke-width="1.5" />
-    <line x1="515" y1="-7" x2="560" y2="-7" stroke="#00F7FF" stroke-width="2" filter="url(#neonCyan)" />
+    <!-- Sleek baseline divider bridge between text and status -->
+    <line x1="475" y1="-8" x2="775" y2="-8" stroke="#112244" stroke-width="1.5" />
+    <line x1="475" y1="-8" x2="520" y2="-8" stroke="#00F7FF" stroke-width="2" filter="url(#neonCyan)" />
   </g>
 </svg>
